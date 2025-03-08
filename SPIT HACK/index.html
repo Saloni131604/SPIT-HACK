@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Programming for Kids</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="spaceCanvas"></canvas>
+
+    <div class="dashboard">
+        <h1>🚀 Let's Learn C Programming 🌟</h1>
+        <p>Click on a module to learn step by step!</p>
+
+        <div class="modules">
+            <!-- Module 1: Introduction to C -->
+            <div class="module" onclick="toggleModule(1)">1️⃣ Introduction to C</div>
+            <div class="content" id="module1">
+                <ul>
+                    <li>C is a powerful and widely used programming language.</li>
+                    <li>It was created by Dennis Ritchie in 1972 at Bell Labs.</li>
+                    <li>C is known for its efficiency, speed, and portability.</li>
+                    <li>Many modern languages, like C++, Java, and Python, are influenced by C.</li>
+                    <li>C is used in operating systems, embedded systems, and game development.</li>
+                    <li>It allows direct memory access, giving programmers more control.</li>
+                    <li>C follows a structured approach, making it easy to understand and maintain.</li>
+                    <li>Programs in C are written using simple English-like commands.</li>
+                    <li>It is a compiled language, meaning the code is translated before execution.</li>
+                    <li>Understanding C helps in learning other programming languages efficiently.</li>
+                </ul>
+            </div>
+
+            <!-- Module 2: Variables & Data Types -->
+            <div class="module" onclick="toggleModule(2)">2️⃣ Variables & Data Types</div>
+            <div class="content" id="module2">
+                <ul>
+                    <li>A variable is a container that stores data.</li>
+                    <li>Data types define the kind of values a variable can hold.</li>
+                    <li>Common data types in C include <b>int</b> (integers), <b>float</b> (decimal numbers), <b>char</b> (characters), and <b>double</b> (larger decimal numbers).</li>
+                    <li>Each data type requires a specific amount of memory.</li>
+                    <li>Variables must be declared before use (e.g., <code>int age = 10;</code>).</li>
+                    <li>Variables can store values that change during program execution.</li>
+                    <li>Constants hold fixed values and are defined using <code>#define</code> or <code>const</code>.</li>
+                    <li>Understanding data types helps in writing optimized and error-free programs.</li>
+                    <li>Choosing the correct data type prevents memory wastage.</li>
+                    <li>Proper use of variables makes code easy to read and maintain.</li>
+                </ul>
+            </div>
+
+            <!-- Module 3: Operators in C -->
+            <div class="module" onclick="toggleModule(3)">3️⃣ Operators in C</div>
+            <div class="content" id="module3">
+                <ul>
+                    <li>Operators perform operations on variables and values.</li>
+                    <li>Arithmetic operators (+, -, *, /, %) handle mathematical calculations.</li>
+                    <li>Comparison operators (==, !=, >, <, >=, <=) compare values.</li>
+                    <li>Logical operators (&&, ||, !) help in decision-making.</li>
+                    <li>Bitwise operators manipulate binary data.</li>
+                    <li>Assignment operators (=, +=, -=, *=, /=) assign values to variables.</li>
+                    <li>Increment (++) and Decrement (--) operators increase or decrease values.</li>
+                    <li>Operators are crucial for performing calculations and logic operations in C.</li>
+                    <li>Understanding operators helps in writing efficient code.</li>
+                    <li>Proper use of operators improves program performance and readability.</li>
+                </ul>
+            </div>
+
+            <!-- Module 4: Control Statements -->
+            <div class="module" onclick="toggleModule(4)">4️⃣ Control Statements</div>
+            <div class="content" id="module4">
+                <ul>
+                    <li>Control statements guide the flow of program execution.</li>
+                    <li>Conditional statements include <code>if</code>, <code>if-else</code>, and <code>switch</code>.</li>
+                    <li>Loops help in repeating tasks, reducing redundancy.</li>
+                    <li>The <code>if</code> statement executes code if a condition is true.</li>
+                    <li>The <code>switch</code> statement selects code blocks based on variable values.</li>
+                    <li>Looping statements include <code>for</code>, <code>while</code>, and <code>do-while</code>.</li>
+                    <li>Break and continue statements control loop execution.</li>
+                    <li>Control statements improve program efficiency and decision-making.</li>
+                    <li>They are widely used in gaming, automation, and data processing.</li>
+                    <li>Using them correctly prevents unnecessary computations.</li>
+                </ul>
+            </div>
+
+            <!-- Module 5: Loops in C -->
+            <div class="module" onclick="toggleModule(5)">5️⃣ Loops in C</div>
+            <div class="content" id="module5">
+                <ul>
+                    <li>Loops help in executing a block of code multiple times.</li>
+                    <li>The <code>for</code> loop repeats a fixed number of times.</li>
+                    <li>The <code>while</code> loop runs as long as the condition is true.</li>
+                    <li>The <code>do-while</code> loop executes at least once before checking the condition.</li>
+                    <li>Loops reduce code repetition and increase efficiency.</li>
+                    <li>They are used in automation, games, and calculations.</li>
+                    <li>The break statement exits a loop prematurely.</li>
+                    <li>The continue statement skips an iteration and moves to the next.</li>
+                    <li>Nested loops are loops inside another loop.</li>
+                    <li>Loops make programming more dynamic and interactive.</li>
+                </ul>
+            </div>
+
+            <!-- Modules 6-10 -->
+            <div class="module" onclick="toggleModule(6)">6️⃣ Functions in C</div>
+            <div class="content" id="module6">
+                <ul>
+                    <li>Functions in C help break a program into smaller, manageable parts.</li>
+                    <li>They allow code reusability, reducing repetition and making debugging easier.</li>
+                    <li>Every C program has a <code>main()</code> function, which serves as the entry point.</li>
+                    <li>Functions can be predefined (like <code>printf()</code>, <code>scanf()</code>) or user-defined.</li>
+                    <li>They can have parameters (inputs) and can return values.</li>
+                    <li>A function must be declared before use and defined before execution.</li>
+                    <li>The return type of a function specifies the data type of the returned value (e.g., <code>int</code>, <code>void</code>).</li>
+                    <li>Functions improve modularity, making programs more structured and readable.</li>
+                    <li>Recursive functions call themselves to solve problems like factorials and Fibonacci series.</li>
+                    <li>Using functions makes large programs more efficient, organized, and maintainable.</li>
+                </ul>
+            </div>
+
+            <div class="module" onclick="toggleModule(7)">7️⃣ Arrays in C</div>
+            <div class="content" id="module7">
+                <ul>
+                    <li>Arrays in C are used to store multiple values of the same data type in a single variable.</li>
+                    <li>They provide a way to efficiently handle large amounts of data.</li>
+                    <li>Arrays have a fixed size, meaning the number of elements must be defined at declaration.</li>
+                    <li>Elements in an array are stored in **contiguous memory locations**.</li>
+                    <li>Each element in an array is accessed using an **index**, starting from 0.</li>
+                    <li>Example declaration: <code>int numbers[5];</code> (creates an array to store 5 integers).</li>
+                    <li>Arrays can be **one-dimensional (1D), two-dimensional (2D), or multi-dimensional**.</li>
+                    <li>They help in storing and managing data efficiently, like in games or data structures.</li>
+                    <li>Loops are commonly used to access and manipulate array elements.</li>
+                    <li>Understanding arrays is crucial for learning advanced topics like pointers and dynamic memory allocation.</li>
+                </ul>
+            </div>
+
+            <div class="module" onclick="toggleModule(8)">8️⃣ Pointers in C</div>
+            <div class="content" id="module8">
+                <ul>
+                    <li>Pointers in C are variables that store the **memory address** of another variable.</li>
+                    <li>They allow direct access and manipulation of memory, improving efficiency.</li>
+                    <li>A pointer is declared using the <code>*</code> symbol, e.g., <code>int *ptr;</code>.</li>
+                    <li>The **address-of operator** (<code>&</code>) is used to get the address of a variable.</li>
+                    <li>The **dereference operator** (<code>*</code>) is used to access the value at a pointer’s address.</li>
+                    <li>Pointers enable **dynamic memory allocation** using <code>malloc()</code> and <code>free()</code>.</li>
+                    <li>They are essential for working with **arrays, structures, and functions** efficiently.</li>
+                    <li>Pointer arithmetic allows moving through memory using <code>ptr++</code> or <code>ptr--</code>.</li>
+                    <li>Function pointers enable passing functions as arguments, supporting advanced programming techniques.</li>
+                    <li>Understanding pointers is crucial for **low-level programming, data structures, and system programming**.</li>
+                </ul>
+            </div>
+
+            <div class="module" onclick="toggleModule(9)">9️⃣ Structures & Unions</div>
+            <div class="content" id="module9">
+                <ul>
+                    <li>Structures (`struct`) in C allow grouping multiple **related variables** of different data types.</li>
+                    <li>They help organize complex data, like storing a student’s name, roll number, and marks together.</li>
+                    <li>A structure is defined using the `struct` keyword and accessed using the **dot operator (`.`)**.</li>
+                    <li>Structures can have **arrays, pointers, and even other structures** as members.</li>
+                    <li>Unions (`union`) are similar to structures but share memory among all members to **save space**.</li>
+                    <li>In a union, only **one member** can hold a value at a time, as they **overlap in memory**.</li>
+                    <li>Structures are useful for **storing records**, while unions are best for **memory optimization**.</li>
+                    <li>We use the `sizeof()` function to find the size of structures and unions in memory.</li>
+                    <li>Structures and unions can be **passed to functions** and used with pointers for efficient memory handling.</li>
+                    <li>They are widely used in **databases, system programming, and hardware interfacing**.</li>
+                </ul>
+            </div>
+
+            <div class="module" onclick="toggleModule(10)">🔟 File Handling in C</div>
+            <div class="content" id="module10">
+                <ul>
+                    <li>File handling in C allows us to **store and retrieve data** from files instead of using memory.</li>
+                    <li>We use the `<stdio.h>` library, which provides functions like `fopen()`, `fclose()`, `fprintf()`, and `fscanf()`.</li>
+                    <li>The `fopen()` function opens a file in different modes like **read (`r`), write (`w`), and append (`a`).</li>
+                    <li>Data can be written to a file using `fprintf()` and read using `fscanf()`.</li>
+                    <li>Binary files can store data in an efficient format using `fwrite()` and `fread()` functions.</li>
+                    <li>The `fclose()` function is used to **close a file** after operations are done to free up resources.</li>
+                    <li>`fseek()`, `ftell()`, and `rewind()` help in **navigating** through files.</li>
+                    <li>Error handling using `if (file == NULL)` ensures the file is opened successfully before performing operations.</li>
+                    <li>File handling is essential for **saving user data, logs, and database records** in programs.</li>
+                    <li>It is widely used in **game development, data storage, configuration files, and system applications**.</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
